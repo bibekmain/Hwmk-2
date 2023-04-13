@@ -54,6 +54,9 @@ header nav ul li a{
     padding: 2px;
     margin: 2px;
     font-size: 30px;
+}
+
+a{
     text-decoration: none;
 }
 
@@ -119,6 +122,7 @@ header nav ul li a:hover{
     flex-direction: row;
     justify-content: flex-start;
 }
+
 #about-page div{
     border: 2px solid;
     border-radius: 5px;
@@ -138,9 +142,71 @@ header nav ul li a:hover{
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    opacity: .4;
 }
 
-#placeholder{
+#about-page img:hover{
+    opacity: 1;
+}
+
+#about-description{
     color: white;
     order: 2;
+    font-size: 22;
+    word-spacing: 3px;
+    line-height: 28px;
+}
+
+#projects-page{
+    background-color: black;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+#main-projects-container{
+    display: flexbox;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+.projects{
+    display: inline-block;
+    margin-left: 25px;
+    padding: 80px 20px;
+    margin: 20px;
+    width: 30%;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.projects h4{
+    font-size: 32px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.projects:hover{
+    background-color: whitesmoke;
+    border-color: black;
+}
+
+.projects:hover h4{
+    color: black;
+    font-style: oblique;
+}
+
+
+/* for screens smaller than 600px, phones ... */
+@media only screen and (max-width: 768px){
+
+}
+/* for screens 768-992 pixels, tablets ... */
+@media only screen and (min-width: 768px){
+/* for screens 992 and up, laptops, desktops ... */
+}
+@media only screen and (min-width: 992px){
+
 }
